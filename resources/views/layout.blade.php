@@ -20,18 +20,13 @@
                     <li>
                         <a href="{{ route('home') }}">Home</a>
                     </li>
+                    <li>
+                        <a href="{{ route('all') }}">Todos los usuarios</a>
+                    </li>
                 </ul>
             </div>
         </nav>
-        <div class="jumbotron">
-            <div class="container">
-                <h1>Curso Eloquent ORM</h1>
-                <p>Texto</p>
-            </div>
-        </div>
-        <div class="container">
             @yield("content")
-        </div>
     <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.j"></script>
     </body>
