@@ -7,8 +7,17 @@ use ORM\User;
 
 class QueryController extends Controller
 {
-    public function getAll() {
+
+    public function eloquentAll() {
         $users = User::all();
-        return view('query.all', compact('users'));
+        $title = 'Todos los usuarios con ALL';
+        return view('query.methods', compact('users', 'title'));
     }
+
+    public function eloquentGet($gender) {
+        $users = User::where('gender', $gender)->get();
+        $title = 'Lista de usuarios con GET';
+        return view('query.methods', compact('users', 'title'));
+    }
+
 }
