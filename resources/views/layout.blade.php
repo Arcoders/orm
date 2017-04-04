@@ -17,9 +17,7 @@
             <div class="container">
                 <a href="{{ route('home') }}" class="navbar-brand">Arcoders ORM</a>
                 <ul class="nav navbar-nav">
-                    <li><a href="{{ route('all') }}">ALL</a></li>
-                    <li><a href="{{ route('get', 'f') }}">Femenino</a></li>
-                    <li><a href="{{ route('get', 'm') }}">Masculino</a></li>
+                    @include('partials.menu-query')
                 </ul>
             </div>
         </nav>
