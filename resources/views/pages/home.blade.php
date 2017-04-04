@@ -12,16 +12,10 @@
         <h1 class="page-header">Ultimos usuarios registrados</h1>
         <table class="table table-hover table-striped">
             <thead>
-                <tr>
-                    <th>ID</th>
-                    <th>Nombre</th>
-                    <th>Email</th>
-                    <th>Genero</th>
-                    <th>Biografia</th>
-                </tr>
+                @include('partials.head-users')
             </thead>
             <tbody>
-                @include('partials.list-users');
+                @include('partials.list-users')
             </tbody>
         </table>
     </div>
